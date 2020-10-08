@@ -1,4 +1,4 @@
-Name ,Drug_class,SideEffects,Indication,Image,,
+Name,Drug_class,SideEffects,Indication,Image
 Spiriva(tiotropium Bromide),Long Acting Bronchodilator(LABA),"Dry mouth, dizziness, tremors, runny nose",COPD,https://alldaymeds.com/wp-content/uploads/2014/12/Spiriva-inhalation-powd-cap-18-mcg.png,,
 Xopenex HFA (levabluterol),Short Acting Bronchodilator(SABA),"Dry mouth, headache , cough, fast heart rate",COPD,https://www.boehringer-ingelheim.com/sites/default/files/Pool/products_pool/PM_products_pool/combivent_respimat.jpg,,
 Combivent Respimat(albuterol/ipratropium),Short Acting Bronchodilator(SABA),"Dry mouth, headache , cough, fast heart rate",COPD,https://www.boehringer-ingelheim.com/sites/default/files/Pool/products_pool/PM_products_pool/combivent_respimat.jpg,,
