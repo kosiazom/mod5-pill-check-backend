@@ -8,5 +8,5 @@ class User < ApplicationRecord
 
     has_many :notes
 
-    validates :username, uniqueness: { case_sensitive: false }, presence :true
+    validates :username, uniqueness: { case_sensitive: false }
 end

@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 2020_10_08_030619) do
   enable_extension "plpgsql"
 
   create_table "disease_states", force: :cascade do |t|
-    t.boolean "hypertension"
-    t.boolean "hyperlipidemia"
-    t.boolean "diabetes"
-    t.boolean "copd"
+    t.boolean "hypertension", default: false
+    t.boolean "hyperlipidemia", default: false
+    t.boolean "diabetes", default: false
+    t.boolean "copd", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -64,6 +64,7 @@ ActiveRecord::Schema.define(version: 2020_10_08_030619) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
+    t.string "username"
     t.string "password_digest"
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
