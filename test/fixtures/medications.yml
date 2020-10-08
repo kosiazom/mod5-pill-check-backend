@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  drug_class: MyString
+  side_effects: MyString
+  indication: MyString
+  image: MyString
+
+two:
+  name: MyString
+  drug_class: MyString
+  side_effects: MyString
+  indication: MyString
+  image: MyString
