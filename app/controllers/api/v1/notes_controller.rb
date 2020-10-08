@@ -1,8 +1,8 @@
 class Api::V1::NotesController < ApplicationController
 
     def show
-        note = Note.find_by(params[:id])
-        render json: note
+        note = Note.find(params[:id])
+        render json: note, except: [:updated_at, :created_at]
     end
 
   def create
