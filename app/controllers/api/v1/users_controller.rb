@@ -13,7 +13,7 @@ def create
     @user = User.create(user_params)
 
     if @user.valid?
-        render json: @user, only:[:username, :name, :email, :password], status: :created
+        render json: @user, only:[:username, :first_name, :last_name, :email, :password], status: :created
     else
         render json: { error: 'failed to create user' }, status: :not_acceptable
     end
@@ -21,7 +21,7 @@ end
 
 private
 def user_params
-    params.require(:user).permit(:name, :username, :password, :email)
+    params.require(:user).permit(:first_name, :last_name, :username, :password, :email)
 end
 
 
