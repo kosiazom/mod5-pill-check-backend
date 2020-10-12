@@ -10,12 +10,12 @@ class Api::V1::UsersController < ApplicationController
 #register to the app
 def create
 
-    @user = User.create(user_params)
+    user = User.create(user_params)
 
-    if @user.valid?
-        render json: @user, only:[:username, :first_name, :last_name, :email, :password], status: :created
+    if user.valid?
+        render json: {user: user, id: user.id, username: user.username, token: encode_token({user_id: user.id})}, status: :created
     else
-        render json: { error: 'failed to create user' }, status: :not_acceptable
+        render json: { error: 'Failed to create user' }, status: :not_acceptable
     end
 end
 
