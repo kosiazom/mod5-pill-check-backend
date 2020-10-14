@@ -5,7 +5,7 @@ namespace :api do
     resources :users, only:[:index, :create]
     resources :medications, only: [:index, :show, :destroy]
     resources :disease_states
-    resources :notes,  only: [:index, :show, :update, :destroy]
+    resources :notes,  only: [:index, :show, :create, :update, :destroy]
 
     post '/login', to: 'auths#create'
     

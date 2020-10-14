@@ -1,4 +1,10 @@
 class Api::V1::NotesController < ApplicationController
+  skip_before_action :logged_in? , only: [:index, :create]
+
+  def index
+    notes = Note.all
+    render json: notes
+end
 
     def show
         note = Note.find(params[:id])
@@ -6,8 +12,9 @@ class Api::V1::NotesController < ApplicationController
     end
 
   def create
+    # byebug
       note = Note.create(date: params[:date], description:params[:description], user_id: params[:user_id])
-      render json: review
+      render json: note
   end
 
   def update
