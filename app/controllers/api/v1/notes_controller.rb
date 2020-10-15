@@ -1,8 +1,9 @@
 class Api::V1::NotesController < ApplicationController
-  skip_before_action :logged_in? , only: [:index, :create]
+  skip_before_action :logged_in? , only: [:index, :show, :create]
 
   def index
     notes = Note.all
+    notes = Note.where("user_id = ?", params[:user_id])
     render json: notes
 end
 
@@ -12,10 +13,10 @@ end
     end
 
   def create
+    # notes = Note.all
+    note = Note.create(date: params[:date], description:params[:description], user_id: params[:user_id])
     # byebug
-    notes = Note.all
-      note = Note.create(date: params[:date], description:params[:description], user_id: params[:user_id])
-      render json: notes
+      render json: note
   end
 
   def update

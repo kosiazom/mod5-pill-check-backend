@@ -1,10 +1,16 @@
 class Api::V1::UsersController < ApplicationController
- skip_before_action :logged_in?, only:[:create, :index]
+ skip_before_action :logged_in?, only:[:create, :show, :index]
 
  def index
      users = User.all
      render json: users, except: [:updated_at, :created_at], include:[:notes, :user_medications, :user_diseases]
  end
+ 
+
+ def show
+    user = User.find(params[:id])
+    render json: user, except: [:updated_at, :created_at], include:[:notes, :user_medications, :user_diseases]
+end
  
 
 #register to the app
