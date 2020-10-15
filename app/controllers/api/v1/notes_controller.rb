@@ -13,8 +13,9 @@ end
 
   def create
     # byebug
+    notes = Note.all
       note = Note.create(date: params[:date], description:params[:description], user_id: params[:user_id])
-      render json: note
+      render json: notes
   end
 
   def update
