@@ -7,7 +7,7 @@ class Api::V1::AuthsController < ApplicationController
         user = User.find_by(username: params[:username])
     #    byebug
         if user && user.authenticate(params[:password])
-          render json: {user: user, notes: user.notes, username: user.username, id: user.id, token: encode_token({user_id: user.id})}, status: :created
+          render json: {user: user, notes: user.notes, medications: user.medications, username: user.username, id: user.id, token: encode_token({user_id: user.id})}, status: :created
         else
             render json: {error: 'invalid username or password!'}
         end

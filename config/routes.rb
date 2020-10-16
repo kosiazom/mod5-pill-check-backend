@@ -4,10 +4,13 @@ namespace :api do
   namespace :v1 do
     resources :users, only:[:index, :show, :create] do
       resources :notes
+      resources :medications, only: [:index, :show, :create, :destroy]
+      resources :disease_states
     end
     resources :medications, only: [:index, :show, :destroy]
     resources :disease_states
     resources :notes,  only: [:index, :show, :create, :update, :destroy]
+    resources :user_medications
 
     post '/login', to: 'auths#create'
     

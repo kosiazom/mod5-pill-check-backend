@@ -5,9 +5,9 @@ class ApplicationController < ActionController::API
 
     end
     
-    def auth_header
-        request.headers["Authorization"]
-    end
+    # def auth_header
+    #     request.headers["Authorization"]
+    # end
 
     def logged_in?
         headers = request.headers["Authorization"]

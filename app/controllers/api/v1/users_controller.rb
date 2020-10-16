@@ -3,13 +3,13 @@ class Api::V1::UsersController < ApplicationController
 
  def index
      users = User.all
-     render json: users, except: [:updated_at, :created_at], include:[:notes, :user_medications, :user_diseases]
+     render json: users, except: [:updated_at, :created_at], include:[:notes, :medications, :user_diseases]
  end
  
 
  def show
     user = User.find(params[:id])
-    render json: user, except: [:updated_at, :created_at], include:[:notes, :user_medications, :user_diseases]
+    render json: user, except: [:updated_at, :created_at], include:[:notes, :medications, :user_diseases]
 end
  
 
