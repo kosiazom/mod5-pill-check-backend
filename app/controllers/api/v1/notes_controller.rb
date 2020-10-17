@@ -1,5 +1,5 @@
 class Api::V1::NotesController < ApplicationController
-  skip_before_action :logged_in? , only: [:index, :show, :create]
+  skip_before_action :logged_in? , only: [:index, :show]
 
   def index
     notes = Note.all

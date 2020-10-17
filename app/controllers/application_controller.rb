@@ -8,13 +8,17 @@ class ApplicationController < ActionController::API
     # def auth_header
     #     request.headers["Authorization"]
     # end
+    def decode(token)
+        
+    end
 
     def logged_in?
         headers = request.headers["Authorization"]
+        # byebug
         token = headers.split(" ")[1]
     
         begin
-            user_id = JWT.decode(token, "my_s3cret")[0]['user_id']
+            user_id = JWT.decode(token, "my_s3cre3t")[0]['user_id']
             user = User.find(user_id)
         rescue
             user = nil #nil if we cant decode the token
