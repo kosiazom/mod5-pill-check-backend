@@ -14,15 +14,15 @@ end
 
   def create
     # notes = Note.all
-    note = Note.create(date: params[:date], description:params[:description], user_id: params[:user_id])
+    note = Note.create(date: params[:date], description:params[:description], title: params[:title], user_id: params[:user_id])
     # byebug
-      render json: note
+      render json: note, except: [:updated_at, :created_at]
   end
 
   def update
     note = Note.find_by(id: params[:id])
-    note.update(description: params[:description])
-    render json: note
+    note.update(description: params[:description], title: params[:title])
+    render json: note, except: [:updated_at, :created_at]
   end
 
   def destroy
