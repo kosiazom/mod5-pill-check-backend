@@ -26,7 +26,7 @@ end
   end
 
   def destroy
-      note = Note.find_by(params[:id])
+      note = Note.find(params[:id])
       note.destroy!
       render json: {}
   end

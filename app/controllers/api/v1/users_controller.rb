@@ -19,7 +19,7 @@ def create
     user = User.create(user_params)
 
     if user.valid?
-        render json: {user: user, id: user.id, username: user.username, token: encode_token({user_id: user.id})}, status: :created
+        render json: {user: user, id: user.id, username: user.username, first_name: user.first_name, token: encode_token({user_id: user.id})}, status: :created
     else
         render json: { error: 'Failed to create user' }, status: :not_acceptable
     end
