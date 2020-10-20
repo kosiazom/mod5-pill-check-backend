@@ -10,4 +10,10 @@ class User < ApplicationRecord
 
     validates :username, presence: true, uniqueness: { case_sensitive: false}
     validates :email, presence: true, uniqueness: { case_sensitive: false}
+
+
+    def last_7_notes
+       my_notes = self.notes.last(7)
+    
+    end
 end

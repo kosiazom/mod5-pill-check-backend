@@ -1,6 +1,6 @@
 Name,Drug_class,SideEffects,Indication,Image
 Spiriva(tiotropium Bromide),Long Acting Bronchodilator(LABA),"Dry mouth, dizziness, tremors, runny nose",COPD,https://alldaymeds.com/wp-content/uploads/2014/12/Spiriva-inhalation-powd-cap-18-mcg.png,,
-Xopenex HFA (levabluterol),Short Acting Bronchodilator(SABA),"Dry mouth, headache , cough, fast heart rate",COPD,https://www.boehringer-ingelheim.com/sites/default/files/Pool/products_pool/PM_products_pool/combivent_respimat.jpg,,
+Xopenex HFA(levalbuterol),Short Acting Bronchodilator(SABA),"Dry mouth, headache , cough, fast heart rate",COPD,https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcST1Le7Q8KRuIQjlLhKhZ7kEN6y63acQtPSaQ&usqp=CAU,,
 Combivent Respimat(albuterol/ipratropium),Short Acting Bronchodilator(SABA),"Dry mouth, headache , cough, fast heart rate",COPD,https://www.boehringer-ingelheim.com/sites/default/files/Pool/products_pool/PM_products_pool/combivent_respimat.jpg,,
 Flovent(fluticasone),Corticosteroid,"Oral Thrush,  hoarse voice",COPD,https://www.drugs.com/pro/images/001f22f8-a83d-495f-9196-d0264ef4d76e/flovent-diskus-spl-graphic-16.jpg,,
 Incruse Elipta(umeclindinium),Long Acting Bronchodilator(LABA),"Dry mouth, dizziness, tremors, runny nose",COPD,https://www.rightbreathe.com/wp-content/uploads/2016/06/Incruse_PackShot-1-1280x853.jpg,,
@@ -30,11 +30,11 @@ Farxiga,SGLT2 inhibitor,"Urinary Tract infection, increase urination",Diabetes,h
 Glipizide,Sulfonylurea,"Hypoglycemia, tremor, drowsiness",Diabetes,https://www.grxstatic.com/d4fuqqd5l3dbz/products/DrugItem_20389.JPG,,
 Crestor(Rosuvastatin),Statins ,"myopathy, headache, elevated liver enzymes",Hyperlidemia,https://www.drugwatch.com/wp-content/uploads/crestor-pills.png,,
 Lipitor(Atorvastatin),Statins,"myopathy, diarrhea, elevated liver enzymes",Hyperlidemia,https://www.seitelman.com/wp-content/uploads/2017/08/lipitor.jpg,,
-Fenofibrate,Fibrate,"Abnormal liver test, myopathy, rhabdomyolysis",Hyperlidemia,https://www.seitelman.com/wp-content/uploads/2017/08/lipitor.jpg,,
+Fenofibrate(Tricor),Fibrate,"Abnormal liver test, myopathy, rhabdomyolysis",Hyperlidemia,https://camberpharma.com/wp-content/uploads/2020/08/Fenofibrate_145mg_90ct_bottle_fit-main.jpg
 Lovastatin,Statins,"Rash,, blurred vision, rhabdomyolysis",Hyperlidemia,https://www.prestoimages.net/store20/rd648/648_pd2166580_1.png,,
 Vytorin,Chloesterol absorption inhibitor + Statin,"Headache, myopathy, rhabdomyolysis",Hyperlidemia,https://medlibrary.org/lib/images-rx/vytorin-5/vytorin-05.jpg,,
 Zetia(Ezetimibe),Cholesterol Absorption Inhibitor,"Diarrhea, headace, fatigue",Hyperlidemia,https://www.bad-drug.net/wp-content/uploads/2012/05/Zetia.jpg,,
-Livalo,Statins,"Myalgia, liver problems, constipation",Hyperlidemia,https://lh3.googleusercontent.com/proxy/k4c8g2dUUUtb47VwyRstQacjrpfLt4EIqPH7W5Iy-1qqBkh7VmcgTG02SkCA2J-m3EzpO_DzUxHzAa1lWW7LW_PkNAnPdtxN4RdA4g1FPh-m-jAg4365,,
-Pravastatin,Statins,"Myalgia, liver problems, GI upset",Hyperlidemia,https://lh3.googleusercontent.com/proxy/TEJtfJ9v96Ch1LyoPfKDU_RT86jfoju22moeRnTlbTRH0NIQ3xZJG-6ChVN5H2a7YrACoD2ZGrO-Aw8b0O8dkSLUl2-jWGi6lTkdfWDmaQ,,
+Livalo,Statins,"Myalgia, liver problems, constipation",Hyperlidemia,https://www.walgreens.com/images/drug/0166869020490.jpg,,
+Pravastatin,Statins,"Myalgia, liver problems, GI upset",Hyperlidemia,https://www.walgreens.com/images/drug/0100093720298.jpg,,
 Praluent ,PCSK9 inhibitor,"Injection site reaction, influenza",Hyperlidemia,https://cbsnews3.cbsistatic.com/hub/i/r/2015/07/27/61966b51-6405-4f3e-a0d4-63db1bbd999e/thumbnail/1200x630/abafd4b8844911f82dba5130e328173d/praluentimage.jpg,,
 Repatha,PCSK9 inhibitor,"Back pain, influenza, injection site reaction",Hyperlidemia,https://www.repatha.com/how-to-start-repatha-injection/~/media/amgen/full/www-repatha-com/how-to-take-repatha/sureclick.ashx,,
