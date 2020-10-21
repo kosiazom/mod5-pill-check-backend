@@ -22,11 +22,11 @@ class Api::V1::UserMedicationsController < ApplicationController
     render json: user_medication.medication
   end
   
+  def destroy
+    user_medication = UserMedication.find(params[:id])
+    user_medication.destroy!
+    render json: {}
+  end
+
   
-
-  private 
-
-#   def user_meds_params
-#     params.require(:user_medication).permit(:user_id, :medication_id)
-#   end
 end
