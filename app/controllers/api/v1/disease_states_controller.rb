@@ -38,5 +38,5 @@ end
 private
 
 def disease_state_params
-    params.require(:disease_state).permit(:hypertension, :hyperlipidemia, :copd, :diabetes)
+    params.require(:disease_state).permit(:user_id,:hypertension, :hyperlipidemia, :copd, :diabetes)
 end

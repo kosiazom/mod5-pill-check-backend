@@ -13,7 +13,7 @@ end
     end
 
   def create
-    # notes = Note.all
+    # byebug
     note = Note.create(date: params[:date], description:params[:description], title: params[:title], user_id: params[:user_id])
     # byebug
       render json: note, except: [:updated_at, :created_at]
