@@ -19,7 +19,7 @@ class Api::V1::UserMedicationsController < ApplicationController
     medication = Medication.find_by(id: params[:medication_id])
     # user_medication = UserMedication.new(name: params[:name], drug_class: params[:drug_class], side_effects: params[:side_effects], image: params[:image], indication: [:indication], user_id: params[:user_id])
     # byebug
-    render json: user_medication.medication, user_medication.id
+    render json: user_medication.medication
   end
   
   def destroy
